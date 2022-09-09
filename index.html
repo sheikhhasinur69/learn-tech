@@ -41,12 +41,14 @@
                     <a class="nav-link " aria-current="page" href="#">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#">Register</a>
+                    <btn class="nav-link" href="#">Register</btn>
                   </li>
               
             </ul>
             <form class="d-flex">
-              <button class="btn btn-outline-primary " type="submit">Register</button>
+              <button type="button" class="btn btn-outline-primary text-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Register Now
+              </button>
             </form>
           </div>
         </div>
@@ -199,9 +201,9 @@ content of a page when looking at its layout.
                         readable content of a page when looking at its layout.</p>
                 </div>
                 <div class="col-md-6 d-flex justify-content-end ">
-                    <button class="btn btn-light text-primary btn-lg">
-                        Register Now
-                    </button>
+                  <button type="button" class="btn btn-light text-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Register Now
+                  </button>
                 </div>
             </div>
         </div>
@@ -272,6 +274,77 @@ content of a page when looking at its layout.
           <button class="btn btn-primary btn-lg">View All</button>
         </div>
       </section>
+
+      <!-- Testimonial -->
+      <section class="p-5">
+        <div class="container">
+        <h1 class="text-center fw-bold">
+          Some Students Feedback
+        </h1>
+        <p class="text-center text-secondary mb-5">
+          It is a long established fact that a reader will be distracted by the readable
+content of a page when looking at its layout.
+        </p>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner p-5">
+            <div class="carousel-item border active p-5">
+              
+              <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but
+                the majority have suffered alteration in some form, by injected
+                humour, or randomised words which don't look even slightly
+                believable. If you are going to use a passage of Lorem.</p>
+                <div class="d-flex align-items-center">
+                  <img class="img-fluid w-25 rounded-circle" src="images/student/student-2.png" alt="">
+                  <div class="mx-5">
+                    <h3>Jane Khatun</h3>
+                    <p>Graphics Designer</p>
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item border a p-5">
+              <h1>
+                <img src="images/comma.png" alt="">
+              </h1>
+              <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but
+                the majority have suffered alteration in some form, by injected
+                humour, or randomised words which don't look even slightly
+                believable. If you are going to use a passage of Lorem.</p>
+                <div class="d-flex align-items-center">
+                  <img class="img-fluid w-25 rounded-circle" src="images/student/student-1.png" alt="">
+                  <div class="mx-5">
+                    <h3>Awlad Hossain</h3>
+                    <p>UI Designer</p>
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item border  p-5">
+              <h1>
+                <img src="images/comma.png" alt="">
+              </h1>
+              <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but
+                the majority have suffered alteration in some form, by injected
+                humour, or randomised words which don't look even slightly
+                believable. If you are going to use a passage of Lorem.</p>
+                <div class="d-flex align-items-center">
+                  <img class="img-fluid w-25 rounded-circle" src="images/student/student-3.png" alt="">
+                  <div class="mx-5">
+                    <h3>Shahrukh khan</h3>
+                    <p>UI Designer</p>
+                  </div>
+                </div>
+            </div>
+           
+            
+          </div>
+        </div>
+      
+      </div>
+      </section>
+
+ 
+        
+        
+ 
 
       <!-- Accordion -->
       <section class="p-5">
@@ -401,6 +474,52 @@ embarrassing hidden in the middle of text. All the generators on the.
 
 
 
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Fill up the form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="mb-3">
+              <label for="first-name" class="col-form-label">
+                  First Name:
+              </label>
+              <input type="text" class="form-control" id="first-name">
+          </div>
+          <div class="mb-3">
+              <label for="last-name" class="col-form-label">
+                  Last Name:
+              </label>
+              <input type="text" class="form-control" id="last-name">
+          </div>
+          <div class="mb-3">
+              <label for="email" class="col-form-label">
+                  Email:
+              </label>
+              <input type="email" class="form-control" id="email">
+          </div>
+          <div class="mb-3">
+              <label for="phone" class="col-form-label">
+                  Phone:
+              </label>
+              <input type="tel" class="form-control" id="phone">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
